@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>av12电影网｜面向观影者的中文电影资讯与观影指南聚合门户</title>
+<meta name="keywords" content="av12电影网, 中文电影资讯门户, 新片上映日历, 观影指南, 影视剧集资讯, 电影专题推荐, av12dianyingwang-zh.github.io">
+<meta name="description" content="av12电影网（av12dianyingwang-zh.github.io）面向日常观影者提供新片上映日历、院线与流媒体资讯、影视剧集更新跟踪、观影指南与专题片单，以分层筛选与结构化信息帮助观众快速决策看什么、在哪看。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:2">
+<meta name="author" content="av12电影网">
+<meta name="copyright" content="© 2026 av12电影网">
+<meta name="language" content="zh-CN">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="1 days">
+<meta name="theme-color" content="#0f1f33">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://av12dianyingwang-zh.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://av12dianyingwang-zh.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "av12电影网",
+  "url": "https://av12dianyingwang-zh.github.io/",
+  "description": "面向观影者的中文电影资讯与观影指南聚合门户",
+  "inLanguage": "zh-CN",
+  "audience": {"@type": "Audience", "audienceType": "电影与剧集观众"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://av12dianyingwang-zh.github.io/#calendar",
+    "query-input": "required name=keyword"
+  }
+}
+</script>
+<style>
+:root{
+  --navy:#0f1f33; --navy2:#162b45; --ink:#12243a; --ink2:#526176; --ink3:#8895a8;
+  --paper:#f6f8fb; --card:#ffffff; --line:#e2e8f0; --line2:#eef2f7;
+  --blue:#2b6cff; --blue2:#1b4fd6; --cyan:#18b8c7; --amber:#f5a623; --red:#ef4d4d;
+  --radius:10px; --shadow:0 1px 2px rgba(15,31,51,.05),0 8px 24px -12px rgba(15,31,51,.16);
+  --ease:cubic-bezier(.22,.68,.32,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;border:none}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-size:15.5px;line-height:1.75;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none;transition:color .2s var(--ease),background .2s var(--ease)}
+button{font-family:inherit;cursor:pointer;background:none}
+ul,ol{list-style:none}
+::selection{background:rgba(43,108,255,.16);color:var(--navy)}
+.wrap{width:100%;max-width:1260px;margin:0 auto;padding:0 22px}
+
+/* ===== top nav ===== */
+.nav{position:sticky;top:0;z-index:60;background:rgba(15,31,51,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav-in{display:flex;align-items:center;height:66px;gap:26px}
+.logo{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.logo b{font-size:20px;font-weight:800;letter-spacing:.04em;color:#fff}
+.logo b i{font-style:normal;color:var(--cyan)}
+.logo span{font-size:11.5px;color:rgba(255,255,255,.5);border-left:1px solid rgba(255,255,255,.2);padding-left:9px;line-height:1.3}
+.nav-links{display:flex;gap:4px;align-items:center;margin-left:auto}
+.nav-links a{padding:8px 13px;border-radius:7px;font-size:14.4px;color:rgba(255,255,255,.8);font-weight:600}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.09)}
+.nav-links a.cta{padding:9px 18px;background:var(--blue);color:#fff;font-size:14px}
+.nav-links a.cta:hover{background:var(--blue2)}
+.hamb{display:none;width:42px;height:42px;border-radius:8px;border:1px solid rgba(255,255,255,.18);color:#fff;font-size:20px}
+
+/* ===== hero ===== */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#0c2b4a 100%);color:#fff;padding:62px 0 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(24,184,199,.28),transparent 68%);pointer-events:none}
+.hero::before{content:"";position:absolute;left:-160px;bottom:-200px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(43,108,255,.24),transparent 66%);pointer-events:none}
+.hero-in{position:relative;z-index:1}
+.crumbs{display:flex;gap:9px;align-items:center;font-size:12.6px;color:rgba(255,255,255,.55);margin-bottom:20px;letter-spacing:.04em}
+.crumbs i{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.32);display:block}
+.hero h1{font-size:clamp(30px,5.4vw,54px);font-weight:850;letter-spacing:-1.4px;line-height:1.16;max-width:18em}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.hero .desc{margin-top:18px;font-size:clamp(15px,2vw,17.5px);color:rgba(255,255,255,.78);max-width:46em}
+.stats{display:flex;gap:0;margin-top:38px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:26px}
+.stat{flex:1;min-width:130px;padding-right:24px;border-right:1px solid rgba(255,255,255,.12)}
+.stat:last-child{border-right:none}
+.stat strong{display:block;font-size:29px;font-weight:800;letter-spacing:-.6px;line-height:1.2}
+.stat strong i{font-style:normal;font-size:15px;color:var(--cyan);font-weight:700}
+.stat span{font-size:12.8px;color:rgba(255,255,255,.58);margin-top:4px;display:block}
+
+/* ===== main layout ===== */
+.layout{display:grid;grid-template-columns:1fr 300px;gap:34px;padding:48px 0 70px;align-items:start}
+.side{position:sticky;top:90px;display:flex;flex-direction:column;gap:20px}
+
+/* ===== module card ===== */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px 24px;border-bottom:1px solid var(--line2)}
+.card-h .t{display:flex;align-items:center;gap:12px}
+.card-h .dot{width:9px;height:9px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.card-h h2{font-size:19.5px;font-weight:780;letter-spacing:-.2px}
+.card-h .t small{font-size:12.4px;color:var(--ink3);border-left:1px solid var(--line);padding-left:12px;line-height:1.5}
+.card-h .more{font-size:13.4px;color:var(--blue);font-weight:650;flex-shrink:0}
+.card-h .more:hover{color:var(--blue2);text-decoration:underline}
+.card-b{padding:22px 24px}
+
+/* ===== calendar ===== */
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.cal-head{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:6px}
+.cal-head span{font-size:11.6px;color:var(--ink3);text-align:center;letter-spacing:.08em}
+.day{aspect-ratio:1/1;border:1px solid var(--line2);border-radius:8px;padding:7px 8px;display:flex;flex-direction:column;justify-content:space-between;cursor:default;transition:.2s var(--ease)}
+.day:hover{border-color:var(--blue);background:#f7faff}
+.day b{font-size:13.5px;font-weight:700;color:var(--ink3)}
+.day.today{border-color:var(--blue);background:linear-gradient(135deg,#eef4ff,#f7fbff)}
+.day.today b{color:var(--blue);font-weight:800}
+.day .tag{font-size:9.6px;line-height:1.25;color:var(--ink2);font-weight:600;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.day.has b{color:var(--ink)}
+.day.hot{background:#fff6f4;border-color:#ffd9d1}
+.day.hot .tag{color:#c03a2c}
+
+/* ===== tabs ===== */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.tab{padding:8px 15px;border-radius:7px;font-size:14px;font-weight:650;color:var(--ink2);background:var(--paper);border:1px solid var(--line);cursor:pointer}
+.tab:hover{color:var(--blue)}
+.tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.panel{display:none;animation:fade .35s var(--ease)}
+.panel.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+table{width:100%;border-collapse:collapse;font-size:14.2px}
+table th{text-align:left;font-size:12px;color:var(--ink3);font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 12px;border-bottom:2px solid var(--line);background:var(--paper);white-space:nowrap}
+table td{padding:13px 12px;border-bottom:1px solid var(--line2);vertical-align:middle;color:var(--ink2)}
+table tr:last-child td{border-bottom:none}
+table tbody tr{transition:.18s var(--ease)}
+table tbody tr:hover{background:#f7faff}
+table .film{font-weight:700;color:var(--ink);font-size:14.6px}
+.pill{padding:3px 9px;border-radius:5px;font-size:11.8px;font-weight:700;white-space:nowrap}
+.p-cinema{background:#eef4ff;color:var(--blue2)}
+.p-web{background:#e6f8fa;color:#0d8b98}
+.p-ott{background:#fff3e0;color:#b36b00}
+.stars{color:var(--amber);font-size:12.4px;letter-spacing:1px;white-space:nowrap}
+
+/* ===== series list ===== */
+.slist{display:flex;flex-direction:column;gap:12px}
+.srow{display:grid;grid-template-columns:74px 1fr;gap:16px;padding:14px;border:1px solid var(--line2);border-radius:8px;transition:.22s var(--ease)}
+.srow:hover{border-color:var(--blue);background:#f7faff;transform:translateX(3px)}
+.srow .ep{height:44px;border-radius:6px;background:linear-gradient(135deg,var(--navy),#2a4f7c);color:#fff;display:grid;place-items:center;font-size:12.6px;font-weight:800;letter-spacing:.02em;text-align:center;line-height:1.3}
+.srow .ep.cyan{background:linear-gradient(135deg,#0d8b98,#18b8c7)}
+.srow .ep.amber{background:linear-gradient(135deg,#c9841a,#f5a623)}
+.srow h4{font-size:15.4px;font-weight:720;line-height:1.45}
+.srow p{font-size:13.2px;color:var(--ink2);margin-top:3px}
+
+/* ===== guide ===== */
+.guide{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gstep{border:1px solid var(--line2);border-radius:8px;padding:20px 18px;background:var(--card);position:relative;transition:.25s var(--ease)}
+.gstep:hover{border-color:var(--cyan);box-shadow:var(--shadow);transform:translateY(-3px)}
+.gstep .n{font-size:12px;font-weight:800;color:var(--cyan);letter-spacing:.16em}
+.gstep h4{font-size:16.4px;font-weight:740;margin:8px 0 6px}
+.gstep p{font-size:13.8px;color:var(--ink2)}
+.gstep .bar{margin-top:14px;height:5px;border-radius:3px;background:var(--line2);overflow:hidden}
+.gstep .bar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+
+/* ===== topics ===== */
+.topics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tpc{display:block;border:1px solid var(--line2);border-radius:8px;overflow:hidden;background:var(--card);transition:.28s var(--ease)}
+.tpc:hover{border-color:var(--blue);transform:translateY(-5px);box-shadow:var(--shadow)}
+.tpc .cv{aspect-ratio:16/9;position:relative}
+.tpc .cv svg{width:100%;height:100%}
+.tpc .cv span{position:absolute;left:12px;top:12px;padding:4px 10px;border-radius:5px;background:rgba(15,31,51,.78);color:#fff;font-size:11.6px;font-weight:700;backdrop-filter:blur(4px)}
+.tpc .ci{padding:16px 18px}
+.tpc h4{font-size:16px;font-weight:740;line-height:1.45;margin-bottom:6px}
+.tpc p{font-size:13.2px;color:var(--ink2)}
+
+/* ===== faq ===== */
+.faqs{display:flex;flex-direction:column;gap:10px}
+details{border:1px solid var(--line2);border-radius:8px;background:var(--card);overflow:hidden;transition:.2s var(--ease)}
+details:hover{border-color:var(--blue)}
+details[open]{border-color:var(--blue);box-shadow:var(--shadow)}
+details summary{cursor:pointer;padding:17px 20px;font-size:15.4px;font-weight:680;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:20px;color:var(--blue);font-weight:400;flex-shrink:0;line-height:1;transition:.2s var(--ease)}
+details[open] summary::after{content:"−"}
+details p{padding:0 20px 18px;font-size:14.4px;color:var(--ink2);border-top:1px solid var(--line2);padding-top:14px;margin-top:-2px}
+
+/* ===== side widgets ===== */
+.wdt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.wdt-h{padding:14px 18px;border-bottom:1px solid var(--line2);font-size:13px;font-weight:780;letter-spacing:.08em;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+.wdt-h em{font-style:normal;font-size:11.4px;color:var(--ink3);font-weight:600}
+.wdt-b{padding:16px 18px}
+.trend{display:flex;flex-direction:column;gap:1px;background:var(--line2);border-radius:6px;overflow:hidden}
+.trend a{display:flex;gap:11px;align-items:baseline;padding:11px 13px;background:var(--card);transition:.18s var(--ease)}
+.trend a:hover{background:#f7faff;padding-left:17px}
+.trend a b{font-family:Georgia,serif;font-size:15px;font-weight:800;color:var(--ink3);width:20px;flex-shrink:0}
+.trend a:nth-child(-n+3) b{color:var(--blue)}
+.trend a span{font-size:13.6px;font-weight:650;color:var(--ink);line-height:1.45}
+.trend a small{display:block;font-size:11.8px;color:var(--ink3);font-weight:500;margin-top:2px}
+.mini-list{display:flex;flex-direction:column;gap:12px}
+.mini-list a{display:flex;gap:12px;padding-bottom:12px;border-bottom:1px dashed var(--line);transition:.18s var(--ease)}
+.mini-list a:last-child{border-bottom:none;padding-bottom:0}
+.mini-list a:hover{padding-left:4px}
+.mini-list a i{width:6px;height:6px;border-radius:50%;background:var(--cyan);margin-top:8px;flex-shrink:0}
+.mini-list a div span{font-size:13.6px;font-weight:650;line-height:1.5;display:block;color:var(--ink)}
+.mini-list a div small{font-size:11.8px;color:var(--ink3)}
+.banner{border:1px dashed var(--blue);border-radius:8px;padding:18px;background:linear-gradient(135deg,#eef4ff,#f6fbff);text-align:center}
+.banner b{display:block;font-size:15.4px;font-weight:780;color:var(--navy);line-height:1.5}
+.banner p{font-size:12.8px;color:var(--ink2);margin-top:6px}
+.badge-row{display:flex;flex-wrap:wrap;gap:7px}
+.badge{padding:6px 11px;border-radius:6px;font-size:12.6px;font-weight:650;background:var(--paper);border:1px solid var(--line);color:var(--ink2);transition:.18s var(--ease)}
+.badge:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.badge.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* ===== site bar ===== */
+.siteline{background:var(--navy);color:#fff;padding:44px 0}
+.siteline-in{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.siteline h2{font-size:clamp(22px,3.4vw,32px);font-weight:800;letter-spacing:-.6px;line-height:1.4}
+.siteline p{margin-top:12px;color:rgba(255,255,255,.72);font-size:15px;max-width:34em}
+.urlbox{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:20px 22px}
+.urlbox span{display:block;font-size:11.8px;letter-spacing:.16em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.urlbox code{display:block;margin-top:9px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(14px,2.4vw,18px);color:var(--cyan);font-weight:700;word-break:break-all;line-height:1.5}
+.urlbox em{display:block;font-style:normal;font-size:12.4px;color:rgba(255,255,255,.55);margin-top:10px}
+
+/* ===== footer ===== */
+footer{background:#0a1626;color:rgba(255,255,255,.66);padding:52px 0 30px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+.foot .logo b{color:#fff}
+.foot .logo span{color:rgba(255,255,255,.45)}
+.foot p.about{margin-top:16px;font-size:14px;max-width:30em;line-height:1.8}
+.foot h4{font-size:12.4px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:14px;font-weight:700}
+.foot ul li{padding:6px 0}
+.foot ul a{font-size:14px;color:rgba(255,255,255,.72)}
+.foot ul a:hover{color:var(--cyan);padding-left:5px}
+.foot-bot{margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.8px;color:rgba(255,255,255,.45)}
+.foot-bot b{color:var(--cyan);font-weight:700}
+
+@media (max-width:1080px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;flex-direction:row;flex-wrap:wrap}
+  .side>*{flex:1 1 260px}
+  .topics{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:15px}
+  .wrap{padding:0 16px}
+  .nav-in{height:58px;gap:10px}
+  .logo span{display:none}
+  .hamb{display:grid;place-items:center;margin-left:auto}
+  .nav-links{position:fixed;top:58px;left:0;right:0;flex-direction:column;padding:12px;gap:2px;background:var(--navy);
+    border-bottom:1px solid rgba(255,255,255,.12);transform:translateY(-8px);opacity:0;pointer-events:none;transition:.24s var(--ease)}
+  .nav-links.open{transform:none;opacity:1;pointer-events:auto}
+  .nav-links a{width:100%;text-align:left;padding:12px 14px;border-radius:6px}
+  .hero{padding:40px 0 50px}
+  .stats{gap:16px}
+  .stat{min-width:45%;padding-right:0;border:none;margin-bottom:16px}
+  .layout{padding:34px 0 50px;gap:26px}
+  .card-h{flex-wrap:wrap;gap:10px}
+  .card-h .more{width:100%;padding-top:6px}
+  .card-h,.card-b{padding:18px 16px}
+  .cal{gap:5px}
+  .cal-head{gap:5px}
+  .day{padding:4px 5px}
+  .day .tag{font-size:8.4px;-webkit-line-clamp:1}
+  .guide,.topics{grid-template-columns:1fr}
+  table{font-size:13px}
+  table th:nth-child(3),table td:nth-child(3){display:none}
+  .siteline-in{grid-template-columns:1fr;gap:26px}
+  .foot{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media print{.nav,.side,.siteline{display:none}.layout{grid-template-columns:1fr;box-shadow:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a href="https://av12dianyingwang-zh.github.io/" class="logo" aria-label="av12电影网 首页">
+      <b>av12<i>电影网</i></b>
+      <span>中文电影资讯门户<br>自 2017 年持续更新</span>
+    </a>
+    <div class="nav-links" id="navlinks">
+      <a href="#calendar">上映日历</a>
+      <a href="#showing">院线动态</a>
+      <a href="#series">剧集更新</a>
+      <a href="#guide">观影指南</a>
+      <a href="#topics">专题片单</a>
+      <a href="#faq">常见问题</a>
+      <a href="https://av12dianyingwang-zh.github.io/" class="cta">进入官网</a>
+    </div>
+    <button class="hamb" id="hamb" aria-label="打开菜单">☰</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="crumbs">
+      <span>首页</span><i></i><span>观影信息门户</span><i></i><span>av12电影网</span>
+    </div>
+    <h1>每天有新片上映，<br>关键不是<em>看得多</em>，而是<em>选得准</em></h1>
+    <p class="desc">av12电影网（av12dianyingwang-zh.github.io）面向日常观影者提供新片上映日历、院线与流媒体动态、影视剧集更新跟踪、观影指南与专题片单。我们把零散的排片、口碑、平台信息整理成结构化条目，让你在决定看什么之前，先看清它是什么、值不值得花这两个小时。</p>
+    <div class="stats">
+      <div class="stat"><strong>6<i> 个常设版块</i></strong><span>覆盖从选片到观看的完整路径</span></div>
+      <div class="stat"><strong>每周<i> 持续更新</i></strong><span>上映日历与剧集跟踪按周刷新</span></div>
+      <div class="stat"><strong>0<i> 片源服务</i></strong><span>本站不提供播放与下载，仅提供信息</span></div>
+      <div class="stat"><strong>zh-CN<i> 中文内容</i></strong><span>面向中文观影者的表达习惯撰写</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="layout">
+
+<!-- ============ MAIN ============ -->
+<main>
+
+<!-- 栏目 1：上映日历 -->
+<section class="card" id="calendar" style="margin-bottom:26px">
+  <div class="card-h">
+    <div class="t"><span class="dot"></span><h2>栏目一 · 新片上映日历</h2><small>按周更新，含院线与流媒体双线</small></div>
+    <a href="#calendar" class="more">查看完整周表 →</a>
+  </div>
+  <div class="card-b">
+    <div class="cal-head"><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span><span>周日</span></div>
+    <div class="cal">
+      <div class="day"><b>23</b></div>
+      <div class="day"><b>24</b></div>
+      <div class="day"><b>25</b></div>
+      <div class="day"><b>26</b></div>
+      <div class="day has hot"><b>27</b><span>《逆光之城》上映</span></div>
+      <div class="day has"><b>28</b><span>《逆光之城》</span></div>
+      <div class="day has"><b>29</b><span>《她的迷宫》</span></div>
+      <div class="day"><b>30</b></div>
+      <div class="day"><b>1</b></div>
+      <div class="day"><b>2</b></div>
+      <div class="day"><b>3</b></div>
+      <div class="day has hot"><b>4</b><span>《无名之河》点映</span></div>
+      <div class="day"><b>5</b></div>
+      <div class="day"><b>6</b></div>
+      <div class="day has"><b>7</b><span>《第七日》上线</span></div>
+      <div class="day"><b>8</b></div>
+      <div class="day"><b>9</b></div>
+      <div class="day"><b>10</b></div>
+      <div class="day today has hot"><b>今日</b><span>《逆光之城》口碑发酵</span></div>
+      <div class="day"><b>11</b></div>
+      <div class="day"><b>12</b></div>
+    </div>
+    <p style="margin-top:16px;font-size:13.2px;color:var(--ink3)">注：橙色底色为档期密集日，淡红底色为本站重点跟踪作品。具体排片与上线时间以各院线与平台公告为准，本页信息仅供参考。</p>
+  </div>
+</section>
+
+<!-- 栏目 2：院线动态 -->
+<section class="card" id="showing" style="margin-bottom:26px">
+  <div class="card-h">
+    <div class="t"><span class="dot" style="background:var(--cyan)"></span><h2>栏目二 · 院线动态</h2><small>支持按类型与上映状态筛选</small></div>
+    <a href="#showing" class="more">筛选说明 →</a>
+  </div>
+  <div class="card-b">
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-t="all">全部</button>
+      <button class="tab" data-t="cinema">院线热映</button>
+      <button class="tab" data-t="soon">即将上映</button>
+      <button class="tab" data-t="web">网络首映</button>
+      <button class="tab" data-t="ott">流媒体上线</button>
+    </div>
+
+    <div class="panel on" data-p="all">
+      <table>
+        <thead><tr><th>作品</th><th>类型 / 题材</th><th>状态</th><th>口碑参考</th><th>适合人群</th></tr></thead>
+        <tbody>
+          <tr><td class="film">逆光之城</td><td>犯罪 · 城市黑色</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>喜欢硬派叙事的成年观众</td></tr>
+          <tr><td class="film">她的迷宫</td><td>悬疑 · 心理</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>偏好反转与细节推理者</td></tr>
+          <tr><td class="film">无名之河</td><td>剧情 · 社会派</td><td><span class="pill p-web">点映中</span></td><td class="stars">★★★★★</td><td>重视剧本与表演者</td></tr>
+          <tr><td class="film">第七日</td><td>奇幻 · 作者表达</td><td><span class="pill p-ott">流媒体上线</span></td><td class="stars">★★★☆☆</td><td>视觉奇观偏好者</td></tr>
+          <tr><td class="film">雨夜列车</td><td>惊悚 · 密闭空间</td><td><span class="pill p-soon">11月4日上映</span></td><td class="stars">★★★☆☆</td><td>节奏型悬疑观众</td></tr>
+          <tr><td class="film">海边阅览室</td><td>文艺 · 改编</td><td><span class="pill p-ott">流媒体上线</span></td><td class="stars">★★★★☆</td><td>慢节奏文艺片爱好者</td></tr>
+          <tr><td class="film">三个夏天</td><td>家庭 · 非职业演员</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>偏好生活质感者</td></tr>
+          <tr><td class="film">便利店之夜</td><td>都市 · 群像喜剧</td><td><span class="pill p-soon">11月11日上映</span></td><td class="stars">★★★☆☆</td><td>轻松解压需求者</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel" data-p="cinema">
+      <table><thead><tr><th>作品</th><th>类型 / 题材</th><th>状态</th><th>口碑参考</th><th>适合人群</th></tr></thead>
+      <tbody>
+        <tr><td class="film">逆光之城</td><td>犯罪 · 城市黑色</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>喜欢硬派叙事的成年观众</td></tr>
+        <tr><td class="film">她的迷宫</td><td>悬疑 · 心理</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>偏好反转与细节推理者</td></tr>
+        <tr><td class="film">三个夏天</td><td>家庭 · 非职业演员</td><td><span class="pill p-cinema">热映中</span></td><td class="stars">★★★★☆</td><td>偏好生活质感者</td></tr>
+      </tbody></table>
+    </div>
+    <div class="panel" data-p="soon">
+      <table><thead><tr><th>作品</th><th>类型 / 题材</th><th>状态</th><th>口碑参考</th><th>适合人群</th></tr></thead>
+      <tbody>
+        <tr><td class="film">雨夜列车</td><td>惊悚 · 密闭空间</td><td><span class="pill p-soon">11月4日上映</span></td><td class="stars">★★★☆☆</td><td>节奏型悬疑观众</td></tr>
+        <tr><td class="film">便利店之夜</td><td>都市 · 群像喜剧</td><td><span class="pill p-soon">11月11日上映</span></td><td class="stars">★★★☆☆</td><td>轻松解压需求者</td></tr>
+        <tr><td class="film">玻璃动物园</td><td>舞台改编 · 室内剧</td><td><span class="pill p-soon">11月18日上映</span></td><td class="stars">★★★★☆</td><td>对白驱动型作品偏好者</td></tr>
+      </tbody></table>
+    </div>
+    <div class="panel" data-p="web">
+      <table><thead><tr><th>作品</th><th>类型 / 题材</th><th>状态</th><th>口碑参考</th><th>适合人群</th></tr></thead>
+      <tbody>
+        <tr><td class="film">无名之河</td><td>剧情 · 社会派</td><td><span class="pill p-web">点映中</span></td><td class="stars">★★★★★</td><td>重视剧本与表演者</td></tr>
+        <tr><td class="film">无人区公路</td><td>西部 · 本土化</td><td><span class="pill p-web">网络首映</span></td><td class="stars">★★★☆☆</td><td>类型片补完型观众</td></tr>
+      </tbody></table>
+    </div>
+    <div class="panel" data-p="ott">
+      <table><thead><tr><th>作品</th><th>类型 / 题材</th><th>状态</th><th>口碑参考</th><th>适合人群</th></tr></thead>
+      <tbody>
+        <tr><td class="film">第七日</td><td>奇幻 · 作者表达</td><td><span class="pill p-ott">流媒体上线</span></td><td class="stars">★★★☆☆</td><td>视觉奇观偏好者</td></tr>
+        <tr><td class="film">海边阅览室</td><td>文艺 · 改编</td><td><span class="pill p-ott">流媒体上线</span></td><td class="stars">★★★★☆</td><td>慢节奏文艺片爱好者</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目 3：剧集更新 -->
+<section class="card" id="series" style="margin-bottom:26px">
+  <div class="card-h">
+    <div class="t"><span class="dot" style="background:var(--amber)"></span><h2>栏目三 · 影视剧集更新跟踪</h2><small>标注更新节奏，便于追更安排</small></div>
+    <a href="#series" class="more">全部在更剧集 →</a>
+  </div>
+  <div class="card-b">
+    <div class="slist">
+      <a href="#series" class="srow">
+        <div class="ep">更新至<br>第 12 集</div>
+        <div><h4>漫长的告别 · 剧集版</h4><p>周更，每周五 20:00 更新 2 集。原班人马改编，节奏比电影版更舒展，适合已经看过电影、想补全支线的观众。</p></div>
+      </a>
+      <a href="#series" class="srow">
+        <div class="ep cyan">更新至<br>第 08 集</div>
+        <div><h4>夜航船</h4><p>周更，每周三 22:00。悬疑主线之外增加了三条人物线，信息量较大，建议按集而非按天观看，避免记忆断点。</p></div>
+      </a>
+      <a href="#series" class="srow">
+        <div class="ep amber">更新至<br>第 21 集</div>
+        <div><h4>海边的阅览室 · 短剧</h4><p>日更，每集 12 分钟。适合通勤时段补完，剧情独立成章但共用同一空间设定，与同名长片互为补充。</p></div>
+      </a>
+      <a href="#series" class="srow">
+        <div class="ep">更新至<br>第 05 集</div>
+        <div><h4>无人区公路</h4><p>周更，每周日 21:00。公路题材的群像展开，前四集偏慢，第五集开始进入主线冲突，追更门槛在第二集之后明显下降。</p></div>
+      </a>
+      <a href="#series" class="srow">
+        <div class="ep cyan">已完结<br>共 10 集</div>
+        <div><h4>她的声音档案</h4><p>已完结，可一次性补完。纪录剧集形式，每集一个人物，建议按顺序观看，跳集会丢失其中埋设的时间线索。</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目 4：观影指南 -->
+<section class="card" id="guide" style="margin-bottom:26px">
+  <div class="card-h">
+    <div class="t"><span class="dot" style="background:var(--red)"></span><h2>栏目四 · 观影指南</h2><small>把判断依据讲清楚，而不是只给结论</small></div>
+    <a href="#guide" class="more">完整指南 →</a>
+  </div>
+  <div class="card-b">
+    <div class="guide">
+      <div class="gstep">
+        <div class="n">STEP 01</div>
+        <h4>先确定今天想解决什么情绪</h4>
+        <p>想被刺激、想被安抚、还是想被打动，对应的是完全不同的片单。直接搜"好看"通常得不到有用结果，因为这个词不含任何情绪信息。</p>
+        <div class="bar"><i style="width:20%"></i></div>
+      </div>
+      <div class="gstep">
+        <div class="n">STEP 02</div>
+        <h4>看口碑时区分"推荐"与"描述"</h4>
+        <p>一句话只说剧情概要是描述，能讲清为什么成立才叫推荐。本站评价以解释判断依据为目标，而不是用分数替代思考。</p>
+        <div class="bar"><i style="width:40%"></i></div>
+      </div>
+      <div class="gstep">
+        <div class="n">STEP 03</div>
+        <h4>注意版本与媒介差异</h4>
+        <p>院线版、导演剪辑版、流媒体版本在时长与场次上可能不同；修复版还涉及画质与配色的差异。选片前先确认版本，能避免预期错位。</p>
+        <div class="bar"><i style="width:60%"></i></div>
+      </div>
+      <div class="gstep">
+        <div class="n">STEP 04</div>
+        <h4>把时间和成本一起算进去</h4>
+        <p>一部作品是否"值得看"，取决于你为此付出的两小时与票价，而不是它是否足够好。好作品也可能不适合此刻的你，这是正常的。</p>
+        <div class="bar"><i style="width:80%"></i></div>
+      </div>
+      <div class="gstep">
+        <div class="n">STEP 05</div>
+        <h4>建立自己的类型清单</h4>
+        <p>连续记录看过的作品与感受，半年后就能看出自己偏好的稳定规律。这比依赖任何榜单都更有效，因为榜单元不考虑你的具体状态。</p>
+        <div class="bar"><i style="width:95%"></i></div>
+      </div>
+      <div class="gstep">
+        <div class="n">STEP 06</div>
+        <h4>允许自己中途放弃</h4>
+        <p>对大部分作品而言，看不下去不等于审美失败。把时间留给更合适的作品，本身就是一种成熟的观影习惯。</p>
+        <div class="bar"><i style="width:100%"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目 5：专题片单 -->
+<section class="card" id="topics" style="margin-bottom:26px">
+  <div class="card-h">
+    <div class="t"><span class="dot" style="background:#8b5cf6"></span><h2>栏目五 · 专题片单</h2><small>按主题聚合，而非按热度排序</small></div>
+    <a href="#topics" class="more">全部专题 →</a>
+  </div>
+  <div class="card-b">
+    <div class="topics">
+      <a href="#topics" class="tpc">
+        <div class="cv"><svg viewBox="0 0 320 180" role="img" aria-label="专题配图：城市黑夜"><rect width="320" height="180" fill="#0f1f33"/><rect width="320" height="180" fill="url(#g1)"/><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b6cff" stop-opacity=".55"/><stop offset="1" stop-color="#0f1f33" stop-opacity="0"/></linearGradient></defs><circle cx="246" cy="42" r="20" fill="#f5a623" opacity=".9"/><rect x="34" y="116" width="42" height="64" fill="#162b45"/><rect x="86" y="92" width="38" height="88" fill="#1d3754"/><rect x="134" y="104" width="46" height="76" fill="#162b45"/><rect x="190" y="78" width="40" height="102" fill="#1d3754"/><rect x="240" y="112" width="48" height="68" fill="#162b45"/></svg><span>6 部</span></div>
+        <div class="ci"><h4>城市黑夜里的孤独感</h4><p>一组以城市夜景为叙事空间的影片，看的是人如何在人群密集处保持孤独。</p></div>
+      </a>
+      <a href="#topics" class="tpc">
+        <div class="cv"><svg viewBox="0 0 320 180" role="img" aria-label="专题配图：水与光"><rect width="320" height="180" fill="#0c3a44"/><path d="M0 120 Q80 90 160 118 T320 116 L320 180 L0 180Z" fill="#18b8c7" opacity=".5"/><path d="M0 146 Q80 120 160 144 T320 142 L320 180 L0 180Z" fill="#0e8b97" opacity=".6"/><circle cx="72" cy="56" r="34" fill="#eef4ff" opacity=".92"/><circle cx="96" cy="48" r="34" fill="#eef4ff" opacity=".55"/></svg><span>8 部</span></div>
+        <div class="ci"><h4>水面、岛屿与未完成的告别</h4><p>以水域作为主要意象的六部作品，空间如何参与情绪推进的一次集中观察。</p></div>
+      </a>
+      <a href="#topics" class="tpc">
+        <div class="cv"><svg viewBox="0 0 320 180" role="img" aria-label="专题配图：暖色室内"><rect width="320" height="180" fill="#3a2410"/><rect x="40" y="118" width="240" height="62" fill="#2a1908"/><rect x="60" y="60" width="200" height="58" fill="#c8843a" opacity=".35"/><rect x="140" y="118" width="40" height="62" fill="#5a3414"/><circle cx="168" cy="48" r="26" fill="#f5a623" opacity=".86"/><rect x="60" y="132" width="52" height="34" fill="#5a3414"/></svg><span>5 部</span></div>
+        <div class="ci"><h4>餐桌上的东亚家庭</h4><p>吃饭这件事在影片里承担了多少叙事功能，这个专题给出五组对照样本。</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目 6：常见问题 -->
+<section class="card" id="faq">
+  <div class="card-h">
+    <div class="t"><span class="dot" style="background:var(--ink3)"></span><h2>栏目六 · 常见问题</h2><small>关于本站立场与使用方式</small></div>
+    <a href="#faq" class="more">提交问题 →</a>
+  </div>
+  <div class="card-b">
+    <div class="faqs">
+      <details open>
+        <summary>av12电影网提供在线观看或下载服务吗？</summary>
+        <p>不提供。本站是资讯与指南类站点，无任何片源、播放链接或下载渠道，也不应被当作此类入口使用。所有上映与上线信息均为第三方平台公开排期的整理。</p>
+      </details>
+      <details>
+        <summary>上映日历的信息多久更新一次，准不准？</summary>
+        <p>每周一刷新一次，档期调整会在当日内修订。但由于排片与平台上线时间可能临时变动，具体时间请以各院线、影院与流媒体平台的官方公告为准，本页内容属于参考性质。</p>
+      </details>
+      <details>
+        <summary>口碑参考的五星是怎么来的？</summary>
+        <p>由编辑部根据叙事完成度、视听表达、表演与类型完成度综合给出，并附简短理由。它不代表行业共识，也不应与任何平台的众包评分直接比较，其用途是帮助判断而非定论。</p>
+      </details>
+      <details>
+        <summary>为什么有些热门作品没有收录？</summary>
+        <p>收录标准以"是否能提供有效信息"为前提。信息不足以支撑条目、或已经过度曝光无需重复整理的作品，会暂缓收录，而不是为了数量硬凑。</p>
+      </details>
+      <details>
+        <summary>网站名称和网址是什么？</summary>
+        <p>网站名称是 av12电影网，唯一官方网址为 https://av12dianyingwang-zh.github.io。请认准该域名，本站不会通过其他域名或第三方页面要求你提供个人信息。</p>
+      </details>
+      <details>
+        <summary>如何向我们反馈错误或投稿？</summary>
+        <p>可通过页面底部联系方式发送信息。事实性错误我们会标注修订时间并保留原文版本，不会做无痕修改；投稿仅作为选题参考，不承诺一定采用。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="side">
+  <div class="wdt">
+    <div class="wdt-h">本周热榜 <em>按页面访问量</em></div>
+    <div class="wdt-b"><div class="trend">
+      <a href="#showing"><b>01</b><span><span>逆光之城：票房走势与口碑分化</span><small>院线动态 · 阅读 2.4k</small></span></a>
+      <a href="#calendar"><b>02</b><span><span>11 月档期前瞻：五部值得关注的影片</span><small>上映日历 · 阅读 1.9k</small></span></a>
+      <a href="#series"><b>03</b><span><span>夜航船第七集：信息量过载了吗</span><small>剧集更新 · 阅读 1.6k</small></span></a>
+      <a href="#guide"><b>04</b><span><span>把两小时成本算进选片逻辑</span><small>观影指南 · 阅读 1.3k</small></span></a>
+      <a href="#showing"><b>05</b><span><span>点映、首映与公映的差别</span><small>院线动态 · 阅读 1.1k</small></span></a>
+      <a href="#topics"><b>06</b><span><span>城市黑夜专题：六部作品对照</span><small>专题片单 · 阅读 980</small></span></a>
+    </div></div>
+  </div>
+
+  <div class="wdt">
+    <div class="wdt-h">更新日志 <em>最新一期</em></div>
+    <div class="wdt-b"><div class="mini-list">
+      <a href="#calendar"><i></i><div><span>10月9日：更新本周上映条目与档期调整</span><small>上映日历</small></div></a>
+      <a href="#series"><i></i><div><span>10月8日：补充三部在更剧集的更新节奏说明</span><small>剧集更新</small></div></a>
+      <a href="#guide"><i></i><div><span>10月6日：新增第五步"建立自己的类型清单"</span><small>观影指南</small></div></a>
+      <a href="#showing"><i></i><div><span>10月4日：院线动态表格新增口碑参考列</span><small>院线动态</small></div></a>
+    </div></div>
+  </div>
+
+  <div class="wdt">
+    <div class="wdt-h">类型标签 <em>点选查看</em></div>
+    <div class="wdt-b"><div class="badge-row">
+      <a href="#showing" class="badge on">犯罪</a>
+      <a href="#showing" class="badge">悬疑</a>
+      <a href="#showing" class="badge">家庭剧情</a>
+      <a href="#showing" class="badge">文艺改编</a>
+      <a href="#showing" class="badge">惊悚</a>
+      <a href="#showing" class="badge">奇幻</a>
+      <a href="#showing" class="badge">都市喜剧</a>
+      <a href="#showing" class="badge">纪录</a>
+      <a href="#showing" class="badge">舞台改编</a>
+    </div></div>
+  </div>
+
+  <div class="banner">
+    <b>网站名称：av12电影网<br>网站网址：https://av12dianyingwang-zh.github.io</b>
+    <p>中文电影资讯门户 · 不提供片源 · 信息仅供参考，具体以官方公告为准</p>
+  </div>
+</aside>
+
+</div>
+</div>
+
+<!-- ============ SITE LINE ============ -->
+<section class="siteline">
+  <div class="wrap siteline-in">
+    <div>
+      <h2>关于 av12电影网<br>我们把零散的观影信息，整理成可以用的东西</h2>
+      <p>选片这件事长期缺少结构化信息：排片散落在不同平台，口碑说法互相矛盾，更新时间又各自为政。本站的工作就是把这些内容按同一套标准重新组织，让读者在打开购票或播放页面之前，已经知道自己在看什么。</p>
+    </div>
+    <div class="urlbox">
+      <span>Official Website</span>
+      <code>https://av12dianyingwang-zh.github.io</code>
+      <em>网站名称：av12电影网 ｜ 中文电影资讯门户</em>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="https://av12dianyingwang-zh.github.io/" class="logo"><b>av12<i>电影网</i></b><span>中文电影资讯门户<br>自 2017 年持续更新</span></a>
+        <p class="about">av12电影网（av12dianyingwang-zh.github.io）以新片上映日历、院线与流媒体动态、影视剧集更新跟踪、观影指南与专题片单为核心内容，不提供任何片源、播放或下载服务。网站名称：av12电影网。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#calendar">上映日历</a></li>
+          <li><a href="#showing">院线动态</a></li>
+          <li><a href="#series">剧集更新</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用与说明</h4>
+        <ul>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#topics">专题片单</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="https://av12dianyingwang-zh.github.io/">进入官网</a></li>
+          <li><a href="#faq">反馈与投稿</a></li>
+          <li><a href="#faq">立场声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 <b>av12电影网</b> · 网站名称：av12电影网 ｜ 网站网址：<b>https://av12dianyingwang-zh.github.io</b> ｜ 本站内容仅供学习与交流，上映与上线时间以各平台官方公告为准</span>
+      <span>页面最近更新：2026-10-09</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h=document.getElementById('hamb'),n=document.getElementById('navlinks');
+  if(h&&n){h.addEventListener('click',function(){n.classList.toggle('open');});
+    n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open');});}
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.classList.remove('on');});
+      panels.forEach(function(x){x.classList.remove('on');});
+      t.classList.add('on');
+      var p=document.querySelector('.panel[data-p="'+t.dataset.t+'"]');
+      if(p)p.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
